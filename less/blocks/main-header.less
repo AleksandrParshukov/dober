@@ -1,0 +1,46 @@
+.main-header {
+  padding: 75px 0 93px;
+  background-color: @bg-grey;
+  position: relative;
+
+  &::after {
+    .border-line();
+    bottom: 45px;
+  }
+
+  @media (max-width: @mobile-width) {
+    padding: 13px 20px 20px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.main-header__breadcrumbs {
+  position: absolute;
+  top: 57px;
+  left: 80px;
+}
+
+.main-header__title {
+  font-size: 64px;
+  margin: 0 auto 75px;
+
+  @media (max-width: @mobile-width) {
+    font-size: 20px;
+    margin: 0 auto 13px;
+  }
+}
+
+.main-header__search {
+  width: 854px;
+  margin-left: 474px;
+
+  @media (max-width: @mobile-width) {
+    font-size: 5px;
+    width: 226px;
+    height: 16px;
+    margin: 0 auto;
+  }
+}

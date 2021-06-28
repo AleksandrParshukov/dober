@@ -1,5 +1,5 @@
 .logo {
-  color: @basic-white;
+  color: @basic-red;
   text-align: center;
   text-decoration: none;
   display: grid;
@@ -7,6 +7,10 @@
   grid-template-rows: min-content min-content;
   grid-template-areas: "image title" "image text";
   grid-column-gap: 15px;
+
+  &--index {
+    color: @basic-white;
+  }
 
   & picture {
     grid-area: image;
