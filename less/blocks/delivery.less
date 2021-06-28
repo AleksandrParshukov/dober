@@ -1,0 +1,146 @@
+.delivery {
+  text-align: center;
+  padding: 84px 380px 127px 420px;
+  margin-top: 115px;
+  background-color: @bg-grey;
+  box-sizing: border-box;
+  position: relative;
+
+  &::before {
+    .border-line();
+    top: 40px;
+  }
+  
+  &::after {
+    .border-line();
+    bottom: 51px;
+  }
+
+  @media (max-width: @mobile-width) {
+    padding: 13px 75px 33px 80px;
+    margin-top: 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.delivery__title {
+  @media (max-width: @mobile-width) {  
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 146.28%;
+  }
+}
+
+.delivery__list {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (max-width: @mobile-width) {  
+  margin-top: 15px;
+  }
+}
+
+.delivery__item {
+  text-align: start;
+  width: 350px;
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:nth-child(3n) {
+    margin-right: 0%;
+  }
+
+  @media (max-width: @mobile-width) {  
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: min-content min-content;
+    grid-template-areas: "image title" "image text";
+    grid-column-gap: 33px;
+  }
+}
+
+.delivery__image {
+  width: 92px;
+  height: 92px;
+  object-fit: none;
+  margin-bottom: 55px;
+
+  @media (max-width: @mobile-width) {
+    width: 29px;
+    height: 29px;
+    object-fit: contain;
+    margin-bottom: 0;
+    grid-area: image;
+  }
+}
+
+.delivery__name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: @basic-black;
+  width: 100%;
+  margin: 0;
+
+  @media (max-width: @mobile-width) {
+    font-size: 9px;
+    line-height: 11px;
+    grid-area: title;
+  }
+}
+
+.delivery__number {
+  color: @basic-red;
+}
+
+.delivery__description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 158.47%;
+  color: @basic-grey;
+
+  @media (max-width: @mobile-width) {
+    font-size: 7px;
+    grid-area: text;
+    
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
+.delivery__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: @basic-red;
+  width: 100%;
+  margin-top: 12px;
+
+  @media (max-width: @mobile-width) {
+    display: none;
+  }
+}
+
+.delivery__button {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 3px 32px;
+  margin: 22px auto 0;
+  display: none;
+
+  @media (max-width: @mobile-width) {
+    display: initial;
+  }
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dober</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/style.min.css">
+  </head>
+
+  <body class="page-body page-body--index">
+    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="nav-arrow">
+        <path d="M49 5L9 45L49 85L45 89.5L0.5 45L45 0.5L49 5Z" fill="currentColor" />
+      </symbol>
+    </svg>
+
+    <header class="page-header">
+      <nav class="page-header__nav main-nav">
+        <button class="main-nav__button" type="button"></button>
+        <a class="main-nav__logo logo" href="index.html">    
+          
+          <picture>
+            <source media="(max-width: 375px)" srcset="./img/logo-mobile.png">
+            <img class="logo__image" src="./img/logo.png" alt="Логотип">
+          </picture>
+          <p class="logo__title">Dober</p>
+          <p class="logo__text">Компания по изготовлению полигональных фигур</p>
+        </a>
+
+        <ul class="main-nav__list main-nav__list--index">
+          <li class="main-nav__item main-nav__item--index">
+            <a class="main-nav__link main-nav__link" href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="blog.html">Блог</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="page-header__social social">
+        <li class="social__item">
+          <a class="social__link" href="#"><img class="social__image" src="./img/icon-facebook.png" width="40" height="40" alt="Мы в Facebook"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#"><img class="social__image" src="./img/icon-whatsapp.png" width="40" height="40" alt="Мы в WhatsApp"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#"><img class="social__image" src="./img/icon-facebook.png" width="40" height="40" alt="Мы в Facebook"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#"><img class="social__image" src="./img/icon-whatsapp.png" width="40" height="40" alt="Мы в WhatsApp"></a>
+        </li>
+      </ul>
+
+      <div class="page-header__contact">
+        <a class="page-header__phone" href="tel:+78008008080">8 (800) 800- 80- 80</a>
+        <p class="page-header__text">Заказать обратный звонок</p>
+        <a class="page-header__call-btn" href="tel:+78008008080"><img src="./img/icon-phone.png" width="33" height="33" alt="+78008008080"></a>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <h1 class="page-main__title visually-hidden">Dober - компания по изготовлению полигональных фигур</h1>
+      <section class="banner">
+        <p class="banner__text">Дизайн и изготовление полигональных фигур из металла, нержавеющей стали, кортена</p>
+        <p class="banner__caption">Создаем и украшаем чтобы <br> радовать глаз</p>
+        <button class="banner__button button button--rounded" type="button">Заказать</button>
+      </section>
+
+      <section class="about">
+        <img class="about__image" src="./img/about-img.png" width="501" height="475" alt="Полигональная фигура добермана">
+        <h2 class="about__title title">О нас</h2>
+        <p class="about__text">
+          Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+          Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала 
+          XVI века.  стандартной "рыбой" для текстов на латинице с начала 
+          XVI века. Lorem Ipsum - это текст-"рыба", часто используемый в 
+          печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" 
+          для текстов на латинице с начала XVI века.  стандартной "рыбой" 
+          для текстов на латинице с начала XVI века. 
+          <span class="about__text about__text--desktop">Lorem Ipsum - это 
+          текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem 
+          Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI 
+          века.  стандартной "рыбой" для текстов на латинице с начала XVI века. 
+        </span>
+        </p>
+        <a class="about__link" href="#">Подробнее о компании</a>
+
+      </section>
+
+      <section class="gallery">
+        <h2 class="visually-hidden">Галерея</h2>
+        <p class="gallery__title title">Наши фигуры могут стать отличным <br> украшением вашего интерьера</p>
+
+        <div class="gallery__slider">
+          <button class="gallery__nav gallery__nav--previous">
+            <svg viewBox="0 0 49 90">
+              <use xlink:href="#nav-arrow"></use>
+            </svg>
+          </button>
+          
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <img class="gallery__image" src="./img/gallery-img1.jpg" width="354" height="413" alt="Полигональная фигура добермана">
+              <a class="gallery__button button button--rounded" type="button">Для офиса</a>
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__image" src="./img/gallery-img2.jpg" width="354" height="413" alt="Полигональная фигура добермана">
+              <a class="gallery__button button button--rounded" type="button">Для дома</a>
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__image" src="./img/gallery-img3.jpg" width="354" height="413" alt="Полигональная фигура добермана">
+              <a class="gallery__button button button--rounded" type="button">Для сада</a>
+            </li>
+          </ul>
+
+          <button class="gallery__nav gallery__nav--next">
+            <svg viewBox="0 0 49 90">
+              <use xlink:href="#nav-arrow"></use>
+            </svg>
+          </button>
+        </div>
+
+      </section>
+
+      <section class="making">
+        <h2 class="making__title title">Процесс изготовления</h2>
+        <p class="making__text">Просто посмотрите, как мы работаем</p>
+
+        <div class="making__slider">
+          <button class="making__nav making__nav--previous">
+            <svg viewBox="0 0 49 90">
+              <use xlink:href="#nav-arrow"></use>
+            </svg>
+          </button>
+          
+          <ul class="making__list">
+            <li class="making__item">
+              <img class="making__preview" src="./img/making-img1.png" width="279" height="259" alt="Превью">
+              <button class="making__button play-button" type="button">Смотреть видео</button>
+            </li>
+            <li class="making__item">
+              <img class="making__preview" src="./img/making-img2.png" width="351" height="325" alt="Превью">
+              <button class="making__button play-button" type="button">Смотреть видео</button>
+            </li>
+            <li class="making__item making__item--current">
+              <img class="making__preview" src="./img/making-img3.png" width="990" height="450" alt="Превью">
+              <button class="making__button play-button" type="button">Смотреть видео</button>
+            </li>
+            <li class="making__item">
+                        
+              <picture>
+                <source media="(max-width: 375px)" srcset="./img/making-img4-mobile.png">
+                <img class="making__preview" src="./img/making-img4.png" alt="Превью">
+              </picture>
+              
+              <button class="making__button play-button" type="button">Смотреть видео</button>
+            </li>
+            <li class="making__item">
+              <img class="making__preview" src="./img/making-img5.png" width="279" height="259" alt="Превью">
+              <button class="making__button play-button" type="button">Смотреть видео</button>
+            </li>
+          </ul>
+
+          <button class="making__nav making__nav--next">
+            <svg viewBox="0 0 49 90">
+              <use xlink:href="#nav-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="blog">
+        <h2 class="blog__title title">Блог</h2>
+        <p class="blog__text">
+          Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+          Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.  
+          стандартной "рыбой" для текстов на латинице с начала XVI века. Lorem Ipsum - это 
+          текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является 
+          стандартной "рыбой" для текстов на латинице с начала XVI века.  стандартной 
+          "рыбой" для текстов на латинице с начала XVI века. 
+        </p>
+
+        <div class="blog__slider">
+          <button class="blog__nav blog__nav--previous">
+            <svg width="49" height="90" viewBox="0 0 49 90">
+              <use xlink:href="#nav-arrow"></use>
+            </svg>
+          </button>
+          
+          <ul class="blog__list">
+            <li class="blog__item">
+              <img class="blog__image" src="./img/blog-img1.png" width="283" height="244" alt="Превью">
+              <a class="blog__link" href="#">Уход за шерстью</a>
+            </li>
+            <li class="blog__item">
+              <img class="blog__image" src="./img/blog-img2.png" width="283" height="244" alt="Превью">
+              <a class="blog__link" href="article.html">Как поставить уши</a>
+            </li>
+            <li class="blog__item">
+              <img class="blog__image" src="./img/blog-img3.png" width="283" height="244" alt="Превью">
+              <a class="blog__link" href="#">Отправляемся на выставку: <br> как вести себя среди других</a>
+            </li>
+          </ul>
+
+          <button class="blog__nav blog__nav--next">
+            <svg width="49" height="90" viewBox="0 0 49 90">
+              <use xlink:href="#nav-arrow"></use>
+            </svg>
+          </button>
+        </div>
+
+        <a class="blog__button button button--rounded" href="blog.html">Перейти к новостям</a>
+      </section>
+
+      <section class="delivery">
+        <h2 class="delivery__title title">Доставка и оплата</h2>
+
+        <ul class="delivery__list">
+          <li class="delivery__item">
+            <img class="delivery__image" src="./img/icon-time.png" width="83" height="83" alt="Превью">
+            <p class="delivery__name"><span class="delivery__number">01.</span> Время изготовления</p>
+            <p class="delivery__description">
+              Lorem Ipsum - это текст-"рыба"<span class="delivery__description delivery__description--desktop">, часто используемый в печати и 
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов 
+              на латинице с начала XVI века.</span>
+            </p>
+            <a class="delivery__link" href="#">Подробнее</a>
+          </li>
+          <li class="delivery__item">
+            <img class="delivery__image" src="./img/icon-delivery.png" width="92" height="92" alt="Превью">
+            <p class="delivery__name"><span class="delivery__number">02.</span> Упаковка и доставка</p>
+            <p class="delivery__description">
+              Lorem Ipsum - это текст-"рыба"<span class="delivery__description delivery__description--desktop">, часто используемый в печати и 
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов 
+              на латинице с начала XVI века.</span>
+            </p>
+            <a class="delivery__link" href="#">Подробнее</a>
+          </li>
+          <li class="delivery__item">
+            <img class="delivery__image" src="./img/icon-coins2.png" width="92" height="86" alt="Превью">
+            <p class="delivery__name"><span class="delivery__number">03.</span> Стоимость</p>
+            <p class="delivery__description">
+              Lorem Ipsum - это текст-"рыба"<span class="delivery__description delivery__description--desktop">, часто используемый в печати и 
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов 
+              на латинице с начала XVI века.</span>
+            </p>
+            <a class="delivery__link" href="#">Подробнее</a>
+          </li>
+        </ul>
+
+        <button class="delivery__button button" type="button">Заказать</button>
+
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <h2 class="page-footer__title title">Контакты</h2>
+
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts-wrapper">
+          <ul class="page-footer__contacts contacts">
+            <li class="contacts__item">
+              <p class="contacts__name">Телефон:</p>
+              <a class="contacts__text" href="tel:+78008008080">8-800-800-80-80</a>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__name">Телефон:</p>
+              <a class="contacts__text" href="tel:+78008008080">8-800-800-80-80</a>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__name">Телефон:</p>
+              <a class="contacts__text" href="tel:+78008008080">8-800-800-80-80</a>
+            </li>
+          </ul>
+
+          <ul class="page-footer__social footer-social">
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="#"><img class="footer-social__image" src="./img/icon-vk.png" width="51" height="51" alt="Мы во ВКонтакте"></a>
+            </li>
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="#"><img class="footer-social__image" src="./img/icon-instagram.png" width="51" height="51" alt="Мы в Instagram"></a>
+            </li>
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="#"><img class="footer-social__image" src="./img/icon-whatsapp.png" width="51" height="51" alt="Мы в WhatsApp"></a>
+            </li>
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="#"><img class="footer-social__image" src="./img/icon-viber.png" width="51" height="51" alt="Мы в Viber"></a>
+            </li>
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="#"><img class="footer-social__image" src="./img/icon-telegram.png" width="51" height="51" alt="Мы в Telegram"></a>
+            </li>
+          </ul>
+
+          <button class="page-footer__button button" type="button">Заказать</button>
+        </div>
+
+        <a class="page-footer__map" href="#"><img src="./img/map.png" width="854" height="397" alt="Карта"></a>
+
+      </div>
+
+      <p class="page-footer__copyright">(с) 2021. Все права защищены.</p>
+    </footer>
+  </body>
+</html>

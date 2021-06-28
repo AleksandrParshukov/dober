@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dober</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="page-body">
+    <header class="page-header">
+      <nav class="page-header__nav main-nav">
+        <a class="main-nav__logo logo" href="index.html">          
+          <img class="logo__image" src="./img/logo.svg" width="54" height="100" alt="Логотип">
+          <p class="logo__title">Dober</p>
+          <p class="logo__text">Компания по изготовлению полигональных фигур</p>
+        </a>
+
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current" href="#">Блог</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <button class="main-nav__button" type="button"></button>
+      </nav>
+
+      <ul class="page-header__social social">
+        <li class="social__item">
+          <a class="social__link" href="#"><img class="social__image" src="" width="40" height="40" alt="Мы в Facebook"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#"><img class="social__image" src="" width="40" height="40" alt="Мы в WhatsApp"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#"><img class="social__image" src="" width="40" height="40" alt="Мы в Facebook"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#"><img class="social__image" src="" width="40" height="40" alt="Мы в WhatsApp"></a>
+        </li>
+      </ul>
+
+      <div class="page-header__contact">
+        <a class="page-header__phone" href="tel:+78008008080">8 (800) 800- 80- 80</a>
+        <p class="page-header__text">Заказать обратный звонок</p>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <header class="main-header">
+        <ul class="main-header__breadcrumbs breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--current" href="blog.html">Блог</a>
+          </li>
+        </ul>
+        
+        <h1 class="main-header__title">Все новости про доберманов</h1>
+        <form class="main-header__search search">
+          <label class="visually-hidden" for="search">Поиск по статьям</label>
+          <input class="search__input" type="text" placeholder="Поиск ..." id="search">
+        </form>
+      </header>
+
+      <section class="news"></section>
+    </main>
+
+    <template>
+      <div class="news__card">
+        <img src="news__image" width="535" height="350" alt="">
+        <p class="news__caption"></p>
+        <p class="news__text"></p>
+        <a class="news__link"></a>
+      </div>
+    </template>
+
+  </body>
+</html>

@@ -1,0 +1,38 @@
+.play-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: @basic-white;
+  padding: 22px 40px;
+  background-color: transparent;
+  border: 1px solid @basic-white;
+  box-sizing: border-box;
+  border-radius: 200px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 55px;
+    margin-right: 21px;
+    background-color: transparent;
+    background-image: url("../img/play-btn.svg");
+    border-radius: 50%;
+    display: block;
+  }
+
+  @media (max-width: @mobile-width) {
+    font-size: 7px;
+    line-height: 158.47%;
+    padding: 7px 9px;  
+    
+    &::before {
+      width: 20px;
+      height: 20px;
+      margin-right: 4px;
+      background-size: 100% 100%;
+    }
+  }
+}
