@@ -7,6 +7,10 @@
   background-size: 100% 570px;
   background-repeat: no-repeat;
 
+  @media (min-width: @tablet-width) {
+    padding: 45px 90px;
+  }
+
   @media (min-width: @desktop-width) {
     padding: 50px 100px;
   }
@@ -50,8 +54,18 @@
   border: none;
   cursor: pointer;
 
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
+
   &--next {
     transform: rotate(180deg);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 25px;
+    height: 50px;
   }
 
   @media (min-width: @desktop-width) {
@@ -92,9 +106,59 @@
     }
   }
 
-  @media (min-width: @desktop-width) {
-    display: revert;
+  @media (min-width: @tablet-width) {
+    &:nth-child(2) {
+      display: revert;
+      position: absolute;
+      left: 34px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+  
+      & .making__preview {
+        width: 154px;
+        height: 142px;
+        object-fit: contain;
+      }
+  
+      & .making__button {
+        display: none;
+      }
+    }
+  
+    &:nth-child(3) {
+      display: revert;
+      position: relative;
+      z-index: 3;
+  
+      & .making__preview {
+        width: 375px;
+        height: 166px;
+        object-fit: contain;
+      }
+    }
+  
+    &:nth-child(4) {
+      display: revert;
+      position: absolute;
+      right: 34px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+  
+      & .making__preview {
+        width: 154px;
+        height: 142px;
+        object-fit: contain;
+      }
+  
+      & .making__button {
+        display: none;
+      }
+    }
+  }
 
+  @media (min-width: @desktop-width) {
     &:nth-child(1) {
       position: absolute;
       left: 0;

@@ -2,11 +2,17 @@
   padding: 25px 65px 27px;
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    &::after {
+      .border-line();
+      bottom: 75px;
+    }
+  }
+
   @media (min-width: @desktop-width) {
     padding: 67px 317px 163px;
 
     &::after {
-      .border-line();
       bottom: 105px;
     }
   }
@@ -18,8 +24,11 @@
   position: relative;
   border-radius: 33px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     margin: 0 auto 50px;
+  }
+
+  @media (min-width: @desktop-width) {
     border-radius: 0;
   }
 }
@@ -31,6 +40,10 @@
   color: @basic-black;
   margin: 0 0 25px;
 
+  @media (min-width: @tablet-width) {
+    font-size: 12px;
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 20px;
   }
@@ -41,6 +54,12 @@
   height: 115px;
   object-fit: cover;
   border-radius: 33px;
+
+  @media (min-width: @tablet-width) {
+    width: 418px;
+    height: 185px;
+    border-radius: 14px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 970px;
@@ -67,6 +86,12 @@
   margin: 0 auto 0;
   border-radius: 14px;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    padding: 8px 35px;   
+    margin-top: 40px; 
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 36px;

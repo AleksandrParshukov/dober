@@ -5,6 +5,10 @@
   display: flex;
   flex-wrap: wrap;
 
+  @media (min-width: @tablet-width) {
+    padding: 15px 200px 15px;
+  }
+
   @media (min-width: @desktop-width) {
     padding: 85px 160px 35px;
   }
@@ -36,6 +40,10 @@
   display: flex;
   flex-wrap: nowrap;
 
+  @media (min-width: @tablet-width) {
+    margin: 0 45px 0 0px;
+  }
+
   @media (min-width: @desktop-width) {
     margin: 0 175px 0 200px;
     flex-wrap: wrap;
@@ -45,8 +53,13 @@
 .page-footer__map {
   display: none;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     display: revert;
+
+    & img {
+      width: 179px;
+      height: 83px;
+    }
   }
 }
 
@@ -73,6 +86,10 @@
   color: @text-grey;
   text-align: center;
   margin: 13px auto 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 7px;
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 13px;
