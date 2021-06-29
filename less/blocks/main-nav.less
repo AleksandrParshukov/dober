@@ -1,20 +1,22 @@
 .main-nav {
-  margin-right: 110px;
+  margin-right: 20px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 
-  @media (max-width: @mobile-width) {
-    margin-right: 20px;
-    align-items: center;
+  @media (min-width: @desktop-width) {
+    margin-right: 110px;
+    align-items: normal;
   }
 }
 
 .main-nav__logo {
-  margin-right: 90px;
+  margin-right: 0;
+  margin-left: 50px;
 
-  @media (max-width: @mobile-width) {
-    margin-right: 0;
-    margin-left: 50px;
+  @media (min-width: @desktop-width) {
+    margin-right: 90px;
+    margin-left: 0;
   }
 }
 
@@ -23,15 +25,15 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: none;
 
   &--index {
     color: @basic-white;
   }
 
-  @media (max-width: @mobile-width) {
-    display: none;
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -70,7 +72,6 @@
   border-bottom: 4px solid @basic-red;
   box-sizing: border-box;
   display: block;
-  display: none;
   position: relative;
 
   &::after {
@@ -83,7 +84,7 @@
     top: 2px;
   }
 
-  @media (max-width: @mobile-width) {
-    display: initial;
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }

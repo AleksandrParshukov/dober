@@ -3,23 +3,20 @@
   font-weight: 400;
   font-size: 20px;
   color: @basic-white;
-  width: 100%;
+  width: @mobile-width;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 
   & picture {
     margin-bottom: -5px;
   }
 
-  &--index {
-    display: grid;
-    grid-template-rows: min-content auto min-content;
-  }
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
 
-  
-  @media (max-width: @mobile-width) {
     &--index {
-      display: initial;
+      display: grid;
+      grid-template-rows: min-content auto min-content;
     }
   }
 }

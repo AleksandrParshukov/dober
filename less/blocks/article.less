@@ -1,54 +1,52 @@
 .article {
-  padding: 67px 317px 163px;
+  padding: 25px 65px 27px;
   position: relative;
 
-  &::after {
-    .border-line();
-    bottom: 105px;
-  }
-
-  @media (max-width: @mobile-width) {
-    padding: 25px 65px 27px;
+  @media (min-width: @desktop-width) {
+    padding: 67px 317px 163px;
 
     &::after {
-      display: none;
+      .border-line();
+      bottom: 105px;
     }
   }
 }
 
 .article__video {
   width: min-content;
-  margin: 0 auto 50px;
+  margin: 50px auto 75px;
   position: relative;
+  border-radius: 33px;
 
-  @media (max-width: @mobile-width) {
-    margin: 50px auto 75px;
-    border-radius: 33px;
+  @media (min-width: @desktop-width) {
+    margin: 0 auto 50px;
+    border-radius: 0;
   }
 }
 
 .article__text {
   font-weight: normal;
-  font-size: 20px;
+  font-size: 9px;
   line-height: 158.47%;
   color: @basic-black;
   margin: 0 0 25px;
 
-  @media (max-width: @mobile-width) {
-    font-size: 9px;
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
   }
 }
 
 .article__preview {
-  width: 970px;
-  height: 430px;
-  object-fit: none;
+  width: 259px;
+  height: 115px;
+  object-fit: cover;
+  border-radius: 33px;
 
-  @media (max-width: @mobile-width) {
-    width: 259px;
-    height: 115px;
-    object-fit: cover;
-    border-radius: 33px;
+  @media (min-width: @desktop-width) {
+    width: 970px;
+    height: 430px;
+    object-fit: none;
+    border-radius: 0;
   }
 }
 
@@ -61,19 +59,18 @@
 
 .article__button {
   font-weight: 400;
-  font-size: 36px;
+  font-size: 9px;
   line-height: 100%;
   text-decoration: none;
   width: min-content;
-  padding: 12px 135px;    
-  margin: 150px auto 0;
+  padding: 6px 28px;    
+  margin: 0 auto 0;
   border-radius: 14px;
   display: block;
 
-  @media (max-width: @mobile-width) {
-    font-size: 9px;
-    line-height: 100%;
-    padding: 6px 28px;   
-    margin-top: 0; 
+  @media (min-width: @desktop-width) {
+    font-size: 36px;
+    padding: 12px 135px;   
+    margin-top: 150px; 
   }
 }

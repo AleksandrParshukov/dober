@@ -4,9 +4,10 @@
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  display: none;
 
-  @media (max-width: @mobile-width) {
-    display: none;
+  @media (min-width: @desktop-width) {
+    display: revert;
   }
 }
 

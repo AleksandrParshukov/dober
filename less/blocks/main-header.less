@@ -1,26 +1,28 @@
 .main-header {
-  padding: 75px 420px 93px;
+  padding: 19px 20px 40px;
+  margin-bottom: 0;
   background-color: @bg-grey;
   display: flex;
   flex-wrap: wrap;
   position: relative;
 
-  &::after {
-    .border-line();
-    bottom: 45px;
-  }
-
   &--article {
-    padding-top: 55px;
+    margin-bottom: 184px;  
   }
 
-  @media (max-width: @mobile-width) {
-    padding: 19px 20px 40px;
+  @media (min-width: @desktop-width) {
+    padding: 75px 420px 93px;
     margin-bottom: 184px;
 
     &::after {
-      display: none;
+      .border-line();
+      bottom: 45px;
     }
+
+    &--article {
+      padding-top: 55px;
+    }
+
   }
 }
 
@@ -31,43 +33,49 @@
 }
 
 .main-header__image {
-  margin: 0 210px 0 80px;
+  width: 152px;
+  height: 131px;
+  margin: 0;
+  position: absolute;
+  bottom: -150px;
+  left: 50%;
+  transform: translateX(-50%);
 
-  @media (max-width: @mobile-width) {
+  @media (min-width: @desktop-width) {
     width: 152px;
     height: 131px;
-    margin: 0;
-    position: absolute;
-    bottom: -150px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 210px 0 80px;
+    position: static;
+    transform: translateX(0);
   }
 }
 
 .main-header__title {
-  font-size: 64px;
-  margin: 0 auto 75px;
+  font-size: 20px;
+  margin: 0 auto 13px;
 
-  &--article {
-    font-size: 36px;
-    line-height: 53px;
-    margin-top: 68px;
-  }
+  @media (min-width: @desktop-width) {
+    font-size: 64px;
+    margin: 0 auto 75px;
 
-  @media (max-width: @mobile-width) {
-    font-size: 20px;
-    margin: 0 auto 13px;
+    &--article {
+      font-size: 36px;
+      line-height: 53px;
+      margin-top: 68px;
+    }
   }
 }
 
 .main-header__search {
-  width: 854px;
-  margin-left: 54px;
+  font-size: 5px;
+  width: 226px;
+  height: 16px;
+  margin: 0 auto;
 
-  @media (max-width: @mobile-width) {
-    font-size: 5px;
-    width: 226px;
-    height: 16px;
-    margin: 0 auto;
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    width: 854px;
+    height: auto;
+    margin: 0 0 0 54px;
   }
 }
