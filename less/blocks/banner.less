@@ -5,6 +5,7 @@
   background-color: @basic-grey;
   background-image: url("../img/banner-bg-mobile.jpg");
   background-repeat: no-repeat;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,6 +15,10 @@
     height: 358px;
     background-image: url("../img/banner-bg.jpg");
     background-size: 100%;
+  }
+
+  @media (min-width: @laptop-width) {
+    height: 562px;
   }
 
   @media (min-width: @desktop-width) {
@@ -34,10 +39,15 @@
     max-width: 300px;
   }
 
+  @media (min-width: @laptop-width) {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 100%;
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 24px;
-    max-width: 100%;
     margin: 0;
   }
 }

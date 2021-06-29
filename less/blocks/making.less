@@ -2,17 +2,22 @@
   color: @basic-white;
   text-align: center;
   padding: 45px 45px 30px;
-  background-color: transparent;
-  background-image: linear-gradient(@basic-red 0%, @basic-red 100%);
-  background-size: 100% 570px;
-  background-repeat: no-repeat;
+  background-color: @basic-red;
 
   @media (min-width: @tablet-width) {
     padding: 45px 90px;
   }
 
+  @media (min-width: @laptop-width) {
+    background-color: transparent;
+    background-image: linear-gradient(@basic-red 0%, @basic-red 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+  }
+
   @media (min-width: @desktop-width) {
     padding: 50px 100px;
+    background-size: 100% 570px;
   }
 }
 
@@ -20,7 +25,7 @@
   color: @basic-white;
   display: none;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @laptop-width) {
     display: revert;
   }
 }
@@ -29,7 +34,7 @@
   margin: 0;
   display: none;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @laptop-width) {
     display: revert;
   }
 }
@@ -40,7 +45,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @laptop-width) {
     margin-top: 70px;
   }
 }
@@ -68,6 +73,11 @@
     height: 50px;
   }
 
+  @media (min-width: @laptop-width) {
+    width: 40px;
+    height: 80px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 49px;
     height: 90px;
@@ -82,6 +92,10 @@
   justify-content: center;
   position: relative;
   flex-grow: 1;
+
+  @media (min-width: @laptop-width) {
+    margin: 0 70px;
+  }
 
   @media (min-width: @desktop-width) {
     margin: 0 100px;
@@ -157,19 +171,19 @@
       }
     }
   }
-
-  @media (min-width: @desktop-width) {
+  
+  @media (min-width: @laptop-width) {
     &:nth-child(1) {
+      display: revert;
       position: absolute;
       left: 0;
       top: 50%;
       transform: translateY(-50%);
-      z-index: 1;
   
       & .making__preview {
-        width: 259px;
-        height: 239px;
-        object-fit: none;
+        width: 154px;
+        height: 142px;
+        object-fit: contain;
       }
   
       & .making__button {
@@ -178,27 +192,71 @@
     }
   
     &:nth-child(2) {
-      position: absolute;
-      left: 104px;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 2;
+      left: 40px;
   
       & .making__preview {
-        width: 321px;
-        height: 305px;
-        object-fit: none;
+        width: 214px;
+        height: 197px;
+      }
+    }
+  
+    &:nth-child(3) {
+      z-index: 3;
+  
+      & .making__preview {
+        width: 675px;
+        height: 299px;
+      }
+    }
+  
+    &:nth-child(4) {
+      right: 40px;
+  
+      & .making__preview {
+        width: 214px;
+        height: 197px;
+      }
+    }
+    
+    &:nth-child(5) {
+      display: revert;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+  
+      & .making__preview {
+        width: 154px;
+        height: 142px;
+        object-fit: contain;
       }
   
       & .making__button {
         display: none;
       }
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:nth-child(1) {  
+      & .making__preview {
+        width: 259px;
+        height: 239px;
+        object-fit: none;
+      }
+    }
+  
+    &:nth-child(2) {
+      left: 104px;
+  
+      & .making__preview {
+        width: 321px;
+        height: 305px;
+        object-fit: none;
+      }
+    }
   
     &:nth-child(3) {
-      position: relative;
-      z-index: 3;
-  
       & .making__preview {
         width: 970px;
         height: 430px;
@@ -207,38 +265,18 @@
     }
   
     &:nth-child(4) {
-      position: absolute;
-      right: 104px;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 2;
-  
       & .making__preview {
         width: 321px;
         height: 305px;
         object-fit: none;
       }
-  
-      & .making__button {
-        display: none;
-      }
     }
     
     &:nth-child(5) {
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 1;
-  
       & .making__preview {
         width: 259px;
         height: 239px;
         object-fit: none;
-      }
-  
-      & .making__button {
-        display: none;
       }
     }
   }

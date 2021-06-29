@@ -4,11 +4,19 @@
   box-sizing: border-box;
   position: relative;
 
+  @media (min-width: @laptop-width) {
+    padding: 150px 130px 230px;
+
+    &::after {
+      .border-line();
+      bottom: 60px;
+    }
+  }
+
   @media (min-width: @desktop-width) {
     padding: 195px 183px 291px 138px;
 
     &::after {
-      .border-line();
       bottom: 87px;
     }
   }
@@ -23,6 +31,10 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+  }
+
+  @media (min-width: @laptop-width) {
+    margin: 40px 0 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -54,10 +66,16 @@
     height: 50px;
   }
 
+  @media (min-width: @laptop-width) {
+    width: 40px;
+    height: 80px;
+    margin-bottom: 0;
+  }
+
+
   @media (min-width: @desktop-width) {
     width: 49px;
     height: 90px;
-    margin-bottom: 0;
   }
 }
 
@@ -67,6 +85,10 @@
   margin: 0;
   display: flex;
   overflow: hidden;
+
+  @media (min-width: @laptop-width) {
+    margin: 0 30px;
+  }
 }
 
 .gallery__item {
@@ -83,6 +105,10 @@
     margin: 0 30px 0 0;
   }
 
+  @media (min-width: @laptop-width) {
+    margin: 0 40px 0 0;
+  }
+
   @media (min-width: @desktop-width) {
     margin: 0 122px 0 0;
   }
@@ -91,6 +117,11 @@
 .gallery__image {
   width: 165px;
   height: 192px;
+
+  @media (min-width: @laptop-width) {
+    width: 213px;
+    height: 248px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 354px;
@@ -106,7 +137,7 @@
   padding: 8px 0;
   margin-top: 18px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @laptop-width) {
     font-size: 20px;
     line-height: 24px;
     width: 175px;

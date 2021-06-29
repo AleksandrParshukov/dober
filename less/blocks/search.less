@@ -24,11 +24,18 @@
     }
   }
 
+  @media (min-width: @laptop-width) {
+    &::after {    
+      width: 15px;
+      height: 15px;
+      right: 20px;
+    }
+  }
+
   @media (min-width: @desktop-width) {
     &::after {    
       width: 23px;
       height: 23px;
-      background-image: url("../img/icon-search.png");
       right: 38px;
     }
   }
@@ -49,6 +56,11 @@
   @media (min-width: @tablet-width) {
     font-size: 9px;
     padding: 6px 0 7px 10px;
+  }
+
+  @media (min-width: @laptop-width) {
+    font-size: 14px;
+    padding: 13px 0 13px 13px;
   }
 
   @media (min-width: @desktop-width) {

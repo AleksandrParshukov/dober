@@ -12,14 +12,17 @@
     grid-area: image;
   }
 
-  @media (min-width: @desktop-width) {
-    grid-template-columns: max-content min-content;
-    grid-column-gap: 15px;
+  @media (min-width: @laptop-width) {
+    font-size: 28px;
 
     &--index {
       color: @basic-white;
     }
+  }
 
+  @media (min-width: @desktop-width) {
+    grid-template-columns: max-content min-content;
+    grid-column-gap: 15px;
   }
 }
 

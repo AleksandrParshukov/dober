@@ -1,4 +1,5 @@
 .page-footer {
+  width: 100%;
   padding: 11px 110px 7px;
   background-color: @basic-red;
   box-sizing: border-box;
@@ -7,6 +8,10 @@
 
   @media (min-width: @tablet-width) {
     padding: 15px 200px 15px;
+  }
+
+  @media (min-width: @laptop-width) {
+    padding: 55px 120px 15px;
   }
 
   @media (min-width: @desktop-width) {
@@ -20,7 +25,7 @@
   margin: 0 auto;
   display: none;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @laptop-width) {
     display: revert;
   }
 }
@@ -29,6 +34,10 @@
   margin: 0;
   display: flex;
   align-items: flex-end;
+
+  @media (min-width: @laptop-width) {
+    margin: 42px 0 50px;
+  }
 
   @media (min-width: @desktop-width) {
     margin: 62px 0 93px;
@@ -41,7 +50,11 @@
   flex-wrap: nowrap;
 
   @media (min-width: @tablet-width) {
-    margin: 0 45px 0 0px;
+    margin: 0 45px 0 0;
+  }
+
+  @media (min-width: @laptop-width) {
+    margin: 0 80px 0 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -59,6 +72,20 @@
     & img {
       width: 179px;
       height: 83px;
+    }
+  }
+
+  @media (min-width: @laptop-width) {
+    & img {
+      width: 666px;
+      height: 310px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    & img {
+      width: 854px;
+      height: 397px;
     }
   }
 }
@@ -91,9 +118,14 @@
     font-size: 7px;
   }
 
+  @media (min-width: @laptop-width) {
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0 auto;
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 13px;
     line-height: 21px;
-    margin: 0 auto;
   }
 }

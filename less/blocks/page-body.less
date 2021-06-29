@@ -15,12 +15,17 @@
     width: @tablet-width;
   }
 
-  @media (min-width: @desktop-width) {
-    width: @desktop-width;
+  @media (min-width: @laptop-width) {
+    width: @laptop-width;
 
     &--index {
       display: grid;
       grid-template-rows: min-content auto min-content;
+      grid-template-columns: 100%;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
   }
 }

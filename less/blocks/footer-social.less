@@ -11,16 +11,22 @@
   width: 10px;
   height: 10px;
   margin-bottom: 4px;
+  margin-right: 0;
   
   @media (min-width: @tablet-width) {
     width: 15px;
     height: 15px;
   }
   
+  @media (min-width: @laptop-width) {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
   @media (min-width: @desktop-width) {
     width: 51px;
     height: 51px;
-    margin-right: 0;
     margin-bottom: 15px;
   }
 }
@@ -32,6 +38,11 @@
   @media (min-width: @tablet-width) {
     width: 15px;
     height: 15px;
+  }
+  
+  @media (min-width: @laptop-width) {
+    width: 40px;
+    height: 40px;
   }
 
   @media (min-width: @desktop-width) {

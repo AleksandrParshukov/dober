@@ -24,6 +24,18 @@
     display: block;
   }
 
+  @media (min-width: @laptop-width) {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px 30px;
+    
+    &::before {
+      width: 40px;
+      height: 37px;
+      margin-right: 21px;
+    }
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 16px;
     line-height: 25px;
