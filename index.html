@@ -77,7 +77,7 @@
       <section class="banner">
         <p class="banner__text">Дизайн и изготовление полигональных фигур из металла, нержавеющей стали, кортена</p>
         <p class="banner__caption">Создаем и украшаем чтобы <br> радовать глаз</p>
-        <button class="banner__button button button--rounded" type="button">Заказать</button>
+        <button class="banner__button button button--rounded button--order" type="button">Заказать</button>
       </section>
 
       <section class="about">
@@ -312,7 +312,7 @@
             </li>
           </ul>
 
-          <button class="page-footer__button button" type="button">Заказать</button>
+          <button class="page-footer__button button button--order" type="button">Заказать</button>
         </div>
 
         <a class="page-footer__map" href="#"><img src="./img/map.png" width="854" height="397" alt="Карта"></a>
@@ -321,5 +321,55 @@
 
       <p class="page-footer__copyright">(с) 2021. Все права защищены.</p>
     </footer>
+
+
+    <div class="modal modal--close">
+      <div class="modal__overlay"></div>
+      <div class="modal__window feedback">
+        <p class="feedback__caption">Заказать звонок</p>
+        <p class="feedback__text modal__text">Оставьте заявку и менеджен свяжется с вами в течение 5 минут</p>
+        <form class="feedback__form">
+          <label class="visually-hidden" for="name">Имя</label>
+          <input class="feedback__input" type="text" id="name" name="name" placeholder="Имя ...">
+          <label class="visually-hidden" for="tel">Телефон</label>
+          <input class="feedback__input" type="tel" id="tel" name="tel" placeholder="Телефон ...">
+          <label class="visually-hidden" for="message">Сообщение</label>
+          <textarea class="feedback__input feedback__input--textarea" type="tel" id="message" name="message" placeholder="Сообщение ..."></textarea>
+          <button class="feedback__submit button" type="submit">Заказать звонок</button>
+        </form>
+        <img class="feedback__image" src="./img/feedback-img.png" width="563" height="436" alt="Картинка с оператором">
+      </div>
+    </div>
+
+    <div class="modal modal--close">
+      <div class="modal__overlay"></div>
+      <div class="modal__window success">
+        <img class="success__image" src="./img/success-img.png" width="419" height="248" alt="Картинка с оператором">
+        <p class="success__text modal__text">Спасибо за вашу заявку менеджер свяжется с вами в течение 5 минут</p>
+      </div>
+    </div>
+
+
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__window video">
+        <img class="video__image" src="./img/video-img.png" width="541" height="423" alt="Картинка с оператором">
+        <p class="video__caption">Кривая</p>
+        <p class="video__text modal__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum а.</p>
+        <dl class="video__list">
+          <dt class="video__term">Материал</dt>
+          <dd class="video__definition">Lorem Ipsum</dd>
+          <dt class="video__term">Размер</dt>
+          <dd class="video__definition">Ipsum 80*140 Ipsum 3 mm</dd>
+          <dt class="video__term">Картон</dt>
+          <dd class="video__definition">Lorem Ipsum</dd>
+          <dt class="video__term">Цена</dt>
+          <dd class="video__definition">20 000</dd>
+        </dl>
+        <button class="video__button button" type="button">Заказать</button>
+      </div>
+    </div>
+
+    <script src="js/modal.js"></script>
   </body>
 </html>
