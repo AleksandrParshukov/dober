@@ -4,7 +4,9 @@
   height: 377px;
   background-color: @basic-grey;
   background-image: url("../img/banner-bg-mobile.jpg");
+  background-size: 100%;
   background-repeat: no-repeat;
+  background-position: center;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -14,7 +16,6 @@
   @media (min-width: @tablet-width) {
     height: 358px;
     background-image: url("../img/banner-bg.jpg");
-    background-size: 100%;
   }
 
   @media (min-width: @laptop-width) {
@@ -23,6 +24,7 @@
 
   @media (min-width: @desktop-width) {
     height: 900px;
+    background-size: 1920px 900px;
   }
 }
 

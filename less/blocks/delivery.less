@@ -1,14 +1,14 @@
 .delivery {
   text-align: center;
   width: 100%;
-  padding: 13px 75px 33px 80px;
+  padding: 13px 0 33px;
   margin-top: 0;
   background-color: @bg-grey;
   box-sizing: border-box;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    padding: 13px 100px 33px;
+    padding: 13px 0 33px;
     
     &::after {
       .border-line();
@@ -17,7 +17,7 @@
   }
 
   @media (min-width: @laptop-width) {
-    padding: 80px 120px 100px;
+    padding: 80px 0 100px;
     margin-top: 70px;
 
     &::before {
@@ -31,7 +31,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 84px 380px 127px 420px;
+    padding: 84px 127px;
     margin-top: 115px;
 
     &::before {
@@ -64,19 +64,21 @@
 
 .delivery__list {
   list-style: none;
+  width: min-content;
   padding: 0;
-  margin: 15px 0 0;
+  margin: 15px auto 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     font-size: 28px;
-    margin: 15px 0 0 170px;
+    margin-top: 15px;
   }
 
   @media (min-width: @laptop-width) {
-    margin: 25px 0 0;
+    width: max-content;
+    margin-top: 25px;
   }
 
   @media (min-width: @desktop-width) {  

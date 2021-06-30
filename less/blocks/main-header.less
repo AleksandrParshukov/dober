@@ -1,9 +1,7 @@
 .main-header {
-  padding: 19px 20px 40px;
+  padding: 19px 0 40px;
   margin-bottom: 0;
   background-color: @bg-grey;
-  display: flex;
-  flex-wrap: wrap;
   position: relative;
 
   &--article {
@@ -11,7 +9,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 30px 40px 45px;
+    padding: 30px 0 45px;
 
     &::after {
       .border-line();
@@ -20,7 +18,7 @@
   }
 
   @media (min-width: @laptop-width) {
-    padding: 40px 200px 70px;
+    padding: 40px 0 70px;
 
     &::after {
       bottom: 40px;
@@ -32,7 +30,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 75px 420px 93px;
+    padding: 75px 0 93px;
 
     &::after {
       bottom: 45px;
@@ -42,6 +40,11 @@
       padding-top: 55px;
     }
   }
+}
+
+.main-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-header__breadcrumbs {
@@ -70,7 +73,7 @@
   @media (min-width: @desktop-width) {
     width: 283px;
     height: 244px;
-    margin: 0 210px 0 80px;
+    margin: 0 0 0 280px;
   }
 }
 
@@ -121,12 +124,10 @@
   @media (min-width: @laptop-width) {
     font-size: 14px;
     width: 700px;
-    margin: 0 0 0 40px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
     width: 854px;
-    margin: 0 0 0 54px;
   }
 }

@@ -1,11 +1,11 @@
 .making {
   color: @basic-white;
   text-align: center;
-  padding: 45px 45px 30px;
+  padding: 45px 0 30px;
   background-color: @basic-red;
 
   @media (min-width: @tablet-width) {
-    padding: 45px 90px;
+    padding: 45px 0;
   }
 
   @media (min-width: @laptop-width) {
@@ -16,7 +16,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 50px 100px;
+    padding: 50px 0;
     background-size: 100% 570px;
   }
 }
@@ -247,8 +247,6 @@
     }
   
     &:nth-child(2) {
-      left: 104px;
-  
       & .making__preview {
         width: 321px;
         height: 305px;

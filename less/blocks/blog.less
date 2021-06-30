@@ -2,15 +2,13 @@
   color: @basic-white;
   text-align: center;
   width: 100%;
-  padding: 22px 100px 24px 120px;
+  padding: 22px 0 24px;
   margin-top: 0;
   background-color: transparent;
   box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
 
   @media (min-width: @laptop-width) {
-    padding: 0 150px;
+    padding: 0;
     margin-top: 100px;
     background-color: transparent;
     background-image: linear-gradient(@basic-red 0%, @basic-red 100%);
@@ -19,9 +17,26 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 170px 0 190px;
     margin-top: 215px;
     background-size: 100% 415px;
+  }
+}
+
+.blog__wrapper {
+  width: 142px;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @laptop-width) {
+    width: 1000px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1520px;
   }
 }
 
@@ -33,6 +48,7 @@
   margin-top: 0;
 
   @media (min-width: @tablet-width) {
+    min-width: 40%;
     margin: 0 auto;
     font-size: 24px;
   }

@@ -1,11 +1,9 @@
 .news {
-  padding: 25px 65px 27px;
-  display: flex;
-  flex-wrap: wrap;
+  padding: 25px 0 27px;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    padding: 25px 40px 27px;
+    padding: 25px 0 27px;
 
     &::after {
       .border-line();
@@ -14,7 +12,7 @@
   }
 
   @media (min-width: @laptop-width) {
-    padding: 70px 50px 75px;
+    padding: 70px 0 75px;
 
     &::after {
       bottom: 75px;
@@ -22,11 +20,24 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 88px 70px 97px;
+    padding: 88px 30px 97px;
 
     &::after {
       bottom: 106px;
     }
+  }
+}
+
+.news__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @laptop-width) {
+    width: @laptop-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
   }
 }
 
@@ -47,11 +58,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 75px 91px 0;
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
+    margin: 0 auto 91px;
   }
 }
 
@@ -67,8 +74,8 @@
   }
 
   @media (min-width: @laptop-width) {
-    width: 396px;
-    height: 259px;
+    width: 322px;
+    height: 211px;
     border-radius: 0;
   }
 

@@ -8,7 +8,7 @@ const CARD__INFO = {
 const cardsCount = document.body.clientWidth > 375 ? 18 : 3;
 const CARDS = new Array(cardsCount).fill(CARD__INFO);
 
-const news = document.querySelector('.news');
+const news = document.querySelector('.news__wrapper');
 const cardItemTemplate = document.querySelector('#card').content.querySelector('.news__card');
 
 renderCards(CARDS);

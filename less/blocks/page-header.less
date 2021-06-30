@@ -1,20 +1,17 @@
 .page-header {
   color: @basic-red;
   width: 100%;
-  padding: 0 26px 7px 36px;
+  padding: 0 0 7px;
   background-color: @basic-white;
   border-bottom: 1px solid rgba(161, 161, 161, 0.5);
   box-sizing: border-box;
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 1;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
   z-index: 2;
 
   @media (min-width: @laptop-width) {
-    padding: 0 150px;
+    padding: 0;
 
     &--index {
       color: @basic-white;
@@ -23,7 +20,18 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 205px;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 20px;
+
+  @media (min-width: @desktop-width) {
+    align-items: center;
   }
 }
 

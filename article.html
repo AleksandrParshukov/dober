@@ -12,126 +12,132 @@
 
   <body class="page-body">
     <header class="page-header">
-      <nav class="page-header__nav main-nav">
-        <button class="main-nav__button" type="button"></button>
-        <a class="main-nav__logo logo" href="index.html">    
-          <picture>
-            <source media="(min-width: 1900px)" srcset="./img/logo.png">
-            <img class="logo__image" src="./img/logo-mobile.png" alt="Логотип">
-          </picture>
-          <p class="logo__title">Dober</p>
-          <p class="logo__text">Компания по изготовлению полигональных фигур</p>
-        </a>
+      <div class="page-header__wrapper wrapper">
+        <nav class="page-header__nav main-nav">
+          <button class="main-nav__button" type="button"></button>
+          <a class="main-nav__logo logo" href="index.html">    
+            <picture>
+              <source media="(min-width: 1880px)" srcset="./img/logo.png">
+              <img class="logo__image" src="./img/logo-mobile.png" alt="Логотип">
+            </picture>
+            <p class="logo__title">Dober</p>
+            <p class="logo__text">Компания по изготовлению полигональных фигур</p>
+          </a>
 
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="blog.html">Блог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="page-header__social social">
+          <li class="social__item">
+            <a class="social__link" href="#"><img class="social__image" src="./img/icon-facebook.png" width="40" height="40" alt="Мы в Facebook"></a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">О нас</a>
+          <li class="social__item">
+            <a class="social__link" href="#"><img class="social__image" src="./img/icon-whatsapp.png" width="40" height="40" alt="Мы в WhatsApp"></a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Доставка и оплата</a>
+          <li class="social__item">
+            <a class="social__link" href="#"><img class="social__image" src="./img/icon-facebook.png" width="40" height="40" alt="Мы в Facebook"></a>
           </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" href="blog.html">Блог</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Контакты</a>
+          <li class="social__item">
+            <a class="social__link" href="#"><img class="social__image" src="./img/icon-whatsapp.png" width="40" height="40" alt="Мы в WhatsApp"></a>
           </li>
         </ul>
-      </nav>
 
-      <ul class="page-header__social social">
-        <li class="social__item">
-          <a class="social__link" href="#"><img class="social__image" src="./img/icon-facebook.png" width="40" height="40" alt="Мы в Facebook"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#"><img class="social__image" src="./img/icon-whatsapp.png" width="40" height="40" alt="Мы в WhatsApp"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#"><img class="social__image" src="./img/icon-facebook.png" width="40" height="40" alt="Мы в Facebook"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#"><img class="social__image" src="./img/icon-whatsapp.png" width="40" height="40" alt="Мы в WhatsApp"></a>
-        </li>
-      </ul>
-
-      <div class="page-header__contact">
-        <a class="page-header__phone" href="tel:+78008008080">8 (800) 800- 80- 80</a>
-        <p class="page-header__text">Заказать обратный звонок</p>
-        <a class="page-header__call-btn" href="tel:+78008008080"><img src="./img/icon-phone.png" width="33" height="33" alt="+78008008080"></a>
+        <div class="page-header__contact">
+          <a class="page-header__phone" href="tel:+78008008080">8 (800) 800- 80- 80</a>
+          <p class="page-header__text">Заказать обратный звонок</p>
+          <a class="page-header__call-btn" href="tel:+78008008080"><img src="./img/icon-phone.png" width="33" height="33" alt="+78008008080"></a>
+        </div>
       </div>
     </header>
 
     <main class="page-main">
       <header class="main-header main-header--article">
-        <ul class="main-header__breadcrumbs breadcrumbs">
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="index.html">Главная</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="blog.html">Блог</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link breadcrumbs__link--current" href="">Как поставить уши</a>
-          </li>
-        </ul>
+        <div class="main-header__wrapper wrapper">
+          <ul class="main-header__breadcrumbs breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="blog.html">Блог</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link breadcrumbs__link--current" href="">Как поставить уши</a>
+            </li>
+          </ul>
 
-        <img class="main-header__image" src="./img/blog-img2.png" width="283" height="244" alt="Как поставить уши">
-        <h1 class="main-header__title main-header__title--article title">Как поставить уши</h1>
+          <img class="main-header__image" src="./img/blog-img2.png" width="283" height="244" alt="Как поставить уши">
+          <h1 class="main-header__title main-header__title--article title">Как поставить уши</h1>
+        </div>
       </header>
 
       <section class="article">
-        <p class="article__text">
-          В частности, новая модель организационной деятельности является 
-          качественно новой ступенью новых принципов формирования 
-          материально-технической и кадровой базы. С учётом сложившейся 
-          международной обстановки, глубокий уровень погружения создаёт 
-          необходимость включения в производственный план целого ряда 
-          внеочередных мероприятий с учётом комплекса существующих финансовых 
-          и административных условий.
-        </p>
-        <p class="article__text">
-          В частности, новая модель организационной деятельности является 
-          качественно новой ступенью новых принципов формирования 
-          материально-технической и кадровой базы. С учётом сложившейся 
-          международной обстановки, глубокий уровень погружения создаёт 
-          необходимость включения в производственный план целого ряда 
-          внеочередных мероприятий с учётом комплекса существующих финансовых 
-          и административных условий.В частности, новая модель организационной 
-          деятельности является качественно новой ступенью новых принципов 
-          формирования материально-технической и кадровой базы. 
-        </p>
+        <div class="arcticle__wrapper wrapper">
+          <p class="article__text">
+            В частности, новая модель организационной деятельности является 
+            качественно новой ступенью новых принципов формирования 
+            материально-технической и кадровой базы. С учётом сложившейся 
+            международной обстановки, глубокий уровень погружения создаёт 
+            необходимость включения в производственный план целого ряда 
+            внеочередных мероприятий с учётом комплекса существующих финансовых 
+            и административных условий.
+          </p>
+          <p class="article__text">
+            В частности, новая модель организационной деятельности является 
+            качественно новой ступенью новых принципов формирования 
+            материально-технической и кадровой базы. С учётом сложившейся 
+            международной обстановки, глубокий уровень погружения создаёт 
+            необходимость включения в производственный план целого ряда 
+            внеочередных мероприятий с учётом комплекса существующих финансовых 
+            и административных условий.В частности, новая модель организационной 
+            деятельности является качественно новой ступенью новых принципов 
+            формирования материально-технической и кадровой базы. 
+          </p>
 
-        <div class="article__video">
-          <img class="article__preview" src="./img/arcicle-img.png" width="990" height="450" alt="Превью видео">
-          <button class="article__play play-button" type="button">Смотреть видео</button>
+          <div class="article__video">
+            <img class="article__preview" src="./img/arcicle-img.png" width="990" height="450" alt="Превью видео">
+            <button class="article__play play-button" type="button">Смотреть видео</button>
+          </div>
+
+          <p class="article__text">
+            В частности, новая модель организационной деятельности является 
+            качественно новой ступенью новых принципов формирования 
+            материально-технической и кадровой базы. С учётом сложившейся 
+            международной обстановки, глубокий уровень погружения создаёт 
+            необходимость включения в производственный план целого ряда 
+            внеочередных мероприятий с учётом комплекса существующих финансовых 
+            и административных условий.В частности, новая модель организационной 
+            деятельности является качественно новой ступенью новых принципов 
+            формирования материально-технической и кадровой базы. С учётом 
+            сложившейся международной обстановки, глубокий уровень погружения 
+            создаёт необходимость включения в производственный план целого ряда 
+            внеочередных мероприятий с учётом комплекса существующих финансовых и 
+            административных условий.В частности, новая модель организационной 
+            деятельности является качественно новой ступенью новых принципов 
+            формирования материально-технической и кадровой базы. С учётом 
+            сложившейся международной обстановки, глубокий уровень погружения 
+            создаёт необходимость включения в производственный план целого ряда 
+            внеочередных мероприятий с учётом комплекса существующих финансовых 
+            и административных условий.
+          </p>
+
+          <a class="article__button button" href="blog.html">Назад</a>
         </div>
-
-        <p class="article__text">
-          В частности, новая модель организационной деятельности является 
-          качественно новой ступенью новых принципов формирования 
-          материально-технической и кадровой базы. С учётом сложившейся 
-          международной обстановки, глубокий уровень погружения создаёт 
-          необходимость включения в производственный план целого ряда 
-          внеочередных мероприятий с учётом комплекса существующих финансовых 
-          и административных условий.В частности, новая модель организационной 
-          деятельности является качественно новой ступенью новых принципов 
-          формирования материально-технической и кадровой базы. С учётом 
-          сложившейся международной обстановки, глубокий уровень погружения 
-          создаёт необходимость включения в производственный план целого ряда 
-          внеочередных мероприятий с учётом комплекса существующих финансовых и 
-          административных условий.В частности, новая модель организационной 
-          деятельности является качественно новой ступенью новых принципов 
-          формирования материально-технической и кадровой базы. С учётом 
-          сложившейся международной обстановки, глубокий уровень погружения 
-          создаёт необходимость включения в производственный план целого ряда 
-          внеочередных мероприятий с учётом комплекса существующих финансовых 
-          и административных условий.
-        </p>
-
-        <a class="article__button button" href="blog.html">Назад</a>
       </section>
     </main>
 
